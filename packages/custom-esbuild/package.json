@@ -1,5 +1,5 @@
 {
-  "name": "@angular-builders/custom-esbuild",
+  "name": "@workato/custom-esbuild",
   "version": "20.0.0",
   "description": "Custom esbuild builders for Angular build facade. Allow to modify Angular build configuration without ejecting it",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/just-jeb/angular-builders",
+    "url": "https://github.com/th0r/angular-builders",
     "directory": "packages/custom-esbuild"
   },
   "publishConfig": {

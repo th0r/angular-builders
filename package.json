@@ -21,15 +21,15 @@
     "node": "^20.19.0 || ^22.12.0 || >=24.0.0"
   },
   "scripts": {
-    "build:packages": "yarn workspace @angular-builders/common run build && yarn workspaces foreach -vip --include '@angular-builders/*' --exclude @angular-builders/common run build",
+    "build:packages": "yarn workspace @angular-builders/common run build && yarn workspaces foreach -vip --include '@workato/custom-esbuild' --include '@angular-builders/*' --exclude @angular-builders/common run build",
     "ci": "yarn build:packages && ./scripts/run-ci.sh",
     "lerna": "lerna",
     "graduate": "lerna publish --conventional-commits --conventional-graduate",
     "prepare": "husky install",
     "update:package": "cd $INIT_CWD && yarn node ${PROJECT_CWD}/scripts/update-package.js",
     "update:example": "cd $INIT_CWD && yarn node ${PROJECT_CWD}/scripts/update-example.js",
-    "update:packages": "yarn workspaces foreach --include '@angular-builders/*' run update:package",
-    "update:examples": "yarn workspaces foreach --exclude '@angular-builders/*' run update:example"
+    "update:packages": "yarn workspaces foreach --include '@workato/custom-esbuild' --include '@angular-builders/*' run update:package",
+    "update:examples": "yarn workspaces foreach --exclude '@workato/custom-esbuild' --exclude '@angular-builders/*' run update:example"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",

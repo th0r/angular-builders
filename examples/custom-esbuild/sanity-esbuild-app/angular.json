@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-esbuild:application",
+          "builder": "@workato/custom-esbuild:application",
           "options": {
             "plugins": [
               "esbuild/define-text-plugin.js",
@@ -85,7 +85,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-builders/custom-esbuild:dev-server",
+          "builder": "@workato/custom-esbuild:dev-server",
           "options": {
             "port": 5006
           },
@@ -109,7 +109,7 @@
           "defaultConfiguration": "cjs"
         },
         "test": {
-          "builder": "@angular-builders/custom-esbuild:unit-test",
+          "builder": "@workato/custom-esbuild:unit-test",
           "options": {
             "buildTarget": "sanity-esbuild-app:build",
             "tsConfig": "tsconfig.spec.json"

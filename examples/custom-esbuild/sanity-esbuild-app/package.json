@@ -25,7 +25,6 @@
     "zone.js": "0.15.0"
   },
   "devDependencies": {
-    "@angular-builders/custom-esbuild": "workspace:*",
     "@angular-devkit/build-angular": "^20.1.0",
     "@angular-eslint/builder": "^20.1.0",
     "@angular/cli": "^20.1.0",
@@ -33,6 +32,7 @@
     "@angular/language-service": "^20.1.0",
     "@eslint/js": "^9.29.0",
     "@types/node": "20.17.12",
+    "@workato/custom-esbuild": "workspace:*",
     "angular-eslint": "^20.1.0",
     "cypress": "15.3.0",
     "eslint": "^9.29.0",
